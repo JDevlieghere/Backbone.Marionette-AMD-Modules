@@ -1,0 +1,13 @@
+{
+  "name": "Backbone.Marionette-AMD-Modules",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "latest",
+    "backbone": "latest",
+    "backbone.marionette": "latest",
+    "requirejs": "latest",
+    "requirejs-text": "latest",
+    "underscore": "latest"
+  },
+  "devDependencies": {}
+}
