@@ -1,5 +1,5 @@
-Marionette-AMD-Modules
-======================
+Backbone.Marionette-AMD-Modules
+===============================
 
 [Backbone.Marionette](http://marionettejs.com/) Example with AMD Modules ([RequireJS](http://requirejs.org/))
 
