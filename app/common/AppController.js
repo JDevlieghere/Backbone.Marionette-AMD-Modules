@@ -1,11 +1,13 @@
 define([
-    'app'
-], function (app) {
+    'app',
+    'common/views/Index'
+], function (app, IndexView) {
     'use strict';
 
     return{
-        example: function(){
-            console.log('example');
+        index: function(){
+            var indexView = new IndexView();
+            app.main.show(indexView);
         }
     };
 });

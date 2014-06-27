@@ -1,9 +1,8 @@
 define([
     'marionette',
-    'common/AppRouter',
     'common/views/Header',
     'common/views/Footer'
-], function (Marionette, AppRouter, Header, Footer) {
+], function (Marionette, Header, Footer) {
     'use strict';
 
     var app = new Marionette.Application();
@@ -21,9 +20,10 @@ define([
         app.header.show(header);
         app.footer.show(footer);
         require([
-            "modules/one/OneApp",
-            "modules/two/TwoApp"
-        ], function(){
+            'common/AppRouter',
+            'modules/one/OneApp',
+            'modules/two/TwoApp'
+        ], function(AppRouter){
             new AppRouter();
             Backbone.history.start({pushState: true})
         });
